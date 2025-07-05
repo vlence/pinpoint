@@ -1,7 +1,7 @@
 /**
  * Configuration of the feedback library.
  *
- * @typedef {Object} FeedbackConfig
+ * @typedef {Object} PinpointOptions
  * @prop {string} enabledClass The CSS class applied to the parent of the feedback targets when you start listening for feedback. Default is `'fb-mode'`.
  * @prop {string} targetClass The CSS class used by feedback targets. Default is `'fb-target'`.
  */

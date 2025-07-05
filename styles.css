@@ -1,0 +1,33 @@
+.noscript {
+        color: red;
+        border: 1px solid red;
+        padding: 1em;
+}
+
+.feedback-mode-toggle {
+        cursor: pointer;
+}
+
+.fb-target {
+        font-style: italic;
+}
+
+.fb-app.fb-mode {
+        cursor: crosshair;
+}
+
+.fb-app.fb-mode .fb-target:hover {
+        outline-color: red;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: 4px;
+}
+
+#fb-dialog {
+        cursor: initial;
+}
+
+#fb-form .preview {
+        border: 1px dashed black;
+        padding: 1em;
+}

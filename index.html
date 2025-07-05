@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Simple Feedback. A simpler approach to collecting feedback from your website users.">
+        <title>Simple Feedback</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <script src="feedback.js"></script>
+</head>
+<body>
+        <h1>Simple Feedback</h1>
+        <p>A simpler approach to collecting feedback from your website users.</p>
+
+        <noscript>
+                <p class="noscript">
+                        You do not have JavaScript enabled. This website requires JavaScript to work correctly.
+                        Consult your browser's settings &amp; help files to enable JavaScript.
+                </p>
+        </noscript>
+
+        <div class="fb-app">
+                <h2>The Problem</h2>
+                
+                <p>
+                        If you want to collect feedback from your users you'd typically provide some kind
+                        of form that would require the user to describe, in detail, what was expected and
+                        what went wrong. This is pretty standard and is used across the industry. Sometimes
+                        it may not be so easy to describe it in words so affordances like image/video upload
+                        are made.
+                </p>
+
+                <p>
+                        Videos are probably the most useful as you can see, and maybe hear, what the problem
+                        is. The downside of videos are their size and the fact that you need to watch them in
+                        their entirety to fully understand what is the problem. Screenshots have their own
+                        problems. Users often need to highlight part(s) of the picture to make clear what
+                        they're talking about. Most users wouldn't bother with that. And last but not least,
+                        language. The user simply may not know how to articulate the problem clearly.
+                </p>
+
+                <p>The problem is two-fold:</p>
+
+                <ul>
+                        <li>How do we make it easy for the user to communicate the problem?</li>
+                        <li>How do we make it easy for the debugger to understand the problem?</li>
+                </ul>
+                <p>
+                        Websites are simply a tree of DOM nodes. We can click them. I propose if we allow
+                        the user to simply click at what's frustrating them in the page then half the
+                        confusion is resolved. Let's try it out. Click on "Toggle feedback mode".
+                </p>
+
+                <p>
+                        <label class="feedback-mode-toggle">
+                                <input type="checkbox">
+                                Toggle feedback mode
+                        </label>
+                </p>
+
+                <p>
+                        The following paragraph has a spelling mistake. It irks you. You must let the website
+                        owner know that there is a spelling mistake on the website. You might have noticed
+                        that the cursor changed into a crosshair after toggling "feedback mode".
+                        Click the paragraph below.
+                </p>
+
+                <p class="fb-target">
+                        This line has an intentional seplling mistake.
+                </p>
+
+                <dialog id="fb-dialog" closedby="any">
+                        <form id="fb-form">
+                                <h1>Your Feedback</h1>
+
+                                <blockquote>
+                                        A dialog pops up asking for feedback! You can now use this form to tell the
+                                        website owner how frustrated you are about the spelling mistake.
+                                </blockquote>
+
+                                <div>
+                                        <label>
+                                                Please provide your feedback
+                                                <br>
+                                                <input type="text" name="feedback" required autofocus />
+                                        </label>
+                                </div>
+
+                                <p>For reference, this is what you clicked on</p>
+
+                                <div class="preview"></div>
+
+                                <div>
+                                        <button type="reset">Cancel</button>
+                                        <button type="submit">Submit</button>
+                                </div>
+                        </form>
+                </dialog>
+
+                <p>
+                        If you're reading this I trust you have gone through the exercise of toggling feedback
+                        mode and clicking on the paragraph above. Let's review what just happened. You clicked
+                        a checkbox to toggle the "feedback mode", you hovered over the paragraph with the
+                        spelling mistake, you clicked it, it opened up a dialog/modal which asked you for
+                        feedback on what you clicked and showed you a preview
+                </p>
+
+                <ol>
+                        <li>You clicked a checkbox to toggle the feedback mode</li>
+                        <li>You hovered over the paragraph with the spelling mistake and clicked it</li>
+                        <li>A dialog box opened which asked you for feedback and displayed a preview of what you clicked</li>
+                        <li>After submitting the feedback you got confirmation of what you submitted</li>
+                        <li>You are now back in the website</li>
+                </ol>
+        </div>
+
+        <footer>
+                <p>
+                        I hope you enjoyed reading through this website. If you want to read the source code and see
+                        how this was implemented checkout <a href="https://github.com/vlence/simplefeedback" target="_blank">the repository on Github</a>.
+                </p>
+
+                <p>
+                        <small>
+                                Created by
+                                <a href="https://www.linkedin.com/in/vlence" target="_blank">
+                                        Victor Basumatary
+                                </a>
+                        </small>
+                </p>
+        </footer>
+
+        <script src="main.js"></script>
+</body>
+</html>

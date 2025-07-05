@@ -2,7 +2,7 @@ main()
 
 function main() {
         const feedbackParent = document.querySelector('.fb-app')
-        const fb = new Feedback(feedbackParent)
+        const fb = new Pinpoint(feedbackParent)
 
         /** @type {HTMLInputElement} */
         const feedbackModeToggle = document.querySelector('.feedback-mode-toggle input')

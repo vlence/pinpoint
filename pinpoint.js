@@ -28,7 +28,7 @@
  * your website to convey to the user which feedback target they're pointing at. For example when listening
  * you can style feedback targets to have an outline while being hovered.
  */
-class Feedback {
+class Pinpoint {
         /** @type {HTMLElement} The parent of the feedback targets */
         #parent
 

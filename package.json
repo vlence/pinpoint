@@ -4,7 +4,7 @@
   "description": "The simplest way to collect feedback about your website from your users.",
   "main": "pinpoint.js",
   "scripts": {
-    "start": "browser-sync start -s website -w"
+    "start": "browser-sync start -s docs -w"
   },
   "keywords": [],
   "author": "",

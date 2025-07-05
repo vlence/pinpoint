@@ -1,10 +1,10 @@
 {
-  "name": "simplefeedback",
-  "version": "1.0.0",
-  "description": "A simpler approach to collecting feedback from your website users.",
-  "main": "index.js",
+  "name": "@vlence/pinpoint",
+  "version": "0.0.4",
+  "description": "The simplest way to collect feedback about your website from your users.",
+  "main": "pinpoint.js",
   "scripts": {
-    "start": "browser-sync start -s -w"
+    "start": "browser-sync start -s website -w"
   },
   "keywords": [],
   "author": "",

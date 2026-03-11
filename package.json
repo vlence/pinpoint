@@ -4,12 +4,9 @@
   "description": "The simplest way to collect feedback about your website from your users.",
   "main": "pinpoint.js",
   "scripts": {
-    "start": "browser-sync start -s docs -w"
+    "start": "python3 -m http.server"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^3.0.4"
-  }
+  "license": "ISC"
 }
